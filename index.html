@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>PortFolio</title>
+    <!-- remix icon -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<!-- swippercss -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <!-- sherycss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.css" />
+    <!-- my css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="cursor-none">
+    <!-- TODO: cursor -->
+    <div id="cursor" class="w-12 h-12 border-2 rounded-full fixed -translate-x-[50%] -translate-y-[50%] z-50"></div>
+    <!--TODO: loader -->
+     <div id="loader" class="flex justify-center items-center w-full h-screen">
+        <div id="loader-i" class="text-9xl text-white absolute top-[40%] opacity-0 left-[5%] -translate-x-[50%] -translate-y-[50%] scale-[8]">|</div>
+        <div id="loader-i" class="text-9xl text-white absolute top-[40%] opacity-0 left-[15%] -translate-x-[50%] -translate-y-[50%] scale-[8]">|</div>
+        <div id="loader-i" class="text-9xl text-white absolute top-[40%] opacity-0 left-[25%] -translate-x-[50%] -translate-y-[50%] scale-[8]">|</div>
+        <div id="loader-i" class="text-9xl text-white absolute top-[40%] opacity-0 left-[35%] -translate-x-[50%] -translate-y-[50%] scale-[8]">|</div>
+        <div id="loader-i" class="text-9xl text-white absolute top-[40%] opacity-0 left-[45%] -translate-x-[50%] -translate-y-[50%] scale-[8]">|</div>
+        <div id="revel" class="text-white text-5xl w-fit overflow-hidden whitespace-nowrap h-20 flex items-center"><p class="uppercase font-mono"><<span id="coat" class="inline-block">!</span>-<span>-</span>Hello EveryOne I am here<span>-</span>-></p></div>
+        <div id="loader-i2" class="text-9xl text-white absolute top-[40%] opacity-0 left-[55%] -translate-x-[50%] -translate-y-[50%] scale-[8]">|</div>
+        <div id="loader-i2" class="text-9xl text-white absolute top-[40%] opacity-0 left-[65%] -translate-x-[50%] -translate-y-[50%] scale-[8]">|</div>
+        <div id="loader-i2" class="text-9xl text-white absolute top-[40%] opacity-0 left-[75%] -translate-x-[50%] -translate-y-[50%] scale-[8]">|</div>
+        <div id="loader-i2" class="text-9xl text-white absolute top-[40%] opacity-0 left-[85%] -translate-x-[50%] -translate-y-[50%] scale-[8]">|</div>
+        <div id="loader-i2" class="text-9xl text-white absolute top-[40%] opacity-0 left-[95%] -translate-x-[50%] -translate-y-[50%] scale-[8]">|</div>
+    </div>
+    <div class="container w-full min-h-screen overflow-x-hidden">
+        <!--TODO: navbar -->
+        <div id="navbar" class="flex w-full justify-between px-5 h-14 items-center fixed z-50">
+            <div class="logo-mid font-semibold text-5xl tracking-widest ml-5">Port<span class="text-black text-3xl">F</span>olio</div>
+                <div class="nav-text flex gap-x-9 text-xl font-mono">
+                    <a id="a-link" class="px-5 py-1 rounded-full cursor-none" href="#"><span>Home</span></a>
+                    <a id="a-link" class="px-5 py-1 rounded-full cursor-none" href="#about"><span>About Me</span></a>
+                    <a id="a-link" class="px-5 py-1 rounded-full cursor-none" href="#showcase"><span>ShowCase</span></a>
+                    <a id="a-link" class="px-5 py-1 rounded-full cursor-none" href="#service"><span>Service</span></a>
+                </div>
+                <i id="menu" class="ri-menu-3-line inline-block text-4xl"></i>
+                <div id="second-navbar" class="w-full h-screen fixed top-0 right-[100%] flex flex-col pt-40 gap-y-10">
+                    <i id="close" class="ri-close-large-fill absolute top-12 right-12 text-4xl font-semibold"></i>
+                    <a class="px-2 pb-4 text-7xl border-b-2 border-black mx-4" href="#">Home</a>
+                    <a class="px-2 pb-4 text-7xl border-b-2 border-black mx-4" href="#about">About Me</a>
+                    <a class="px-2 pb-4 text-7xl border-b-2 border-black mx-4" href="#showcase">ShowCase</a>
+                    <a class="px-2 pb-4 text-7xl mx-4" href="#service">Service</a>
+                </div>
+        </div>
+        <!--TODO: Name -->
+        <div id="name-part" class="w-full h-screen flex justify-between">
+            <h1 id="full-name" class="relative top-[40%] left-20 text-7xl h-fit">Hi,<br> There MySelf <span id="name" class="inline-block">Suvam Chakraborti.</span><br><span class="text-5xl tracking-widest">I Am a MERN Stack Developer.</span></h1>
+                <img id="pic" class="w-[37vw] h-[37vw] bg-black relative top-[13%] -right-2" src="IMG_20240508_195114.jpg" alt="">
+        </div>
+        <!--TODO: About Me -->
+        <div id="about" class="w-full h-screen pt-16 pb-10 flex flex-col justify-center items-center gap-y-10 relative">
+            <h1 class="text-6xl mb-10">About Me</h1>
+            <div id="svg" class="w-44 h-44 absolute top-[2%] right-[4%]">
+                <svg viewBox="0 0 137 135" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true">
+                        <path d="M84.1148 67.3453H136.194C136.637 67.3453 137 67.7028 137 68.1397V134.043C137 134.484 136.633 134.845 136.186 134.841C99.0222 134.416 68.9737 104.827 68.502 68.2191V134.206C68.502 134.643 68.1392 135 67.6958 135H0.814284C0.366822 135 -2.06673e-05 134.639 0.00401052 134.198C0.439379 97.2879 30.9354 67.5042 68.498 67.5002H0.806238C0.362807 67.5002 0 67.1427 0 66.7057V0.802561C0 0.361644 0.366822 0.000171863 0.814284 0.00414409C37.9778 0.429172 68.0263 30.0183 68.498 66.6263V0.794617C68.498 0.357672 68.8608 0.000171819 69.3042 0.000171819H136.186C136.633 0.000171819 137 0.361644 136.996 0.802561C136.621 32.4969 114.079 58.94 83.9334 65.7802C83.0022 65.9907 83.1594 67.3453 84.1189 67.3453H84.1148Z" fill="url(#paint0_linear_1655_45397)"></path>
+                        <path d="M84.1148 67.3453H136.194C136.637 67.3453 137 67.7028 137 68.1397V134.043C137 134.484 136.633 134.845 136.186 134.841C99.0222 134.416 68.9737 104.827 68.502 68.2191V134.206C68.502 134.643 68.1392 135 67.6958 135H0.814284C0.366822 135 -2.06673e-05 134.639 0.00401052 134.198C0.439379 97.2879 30.9354 67.5042 68.498 67.5002H0.806238C0.362807 67.5002 0 67.1427 0 66.7057V0.802561C0 0.361644 0.366822 0.000171863 0.814284 0.00414409C37.9778 0.429172 68.0263 30.0183 68.498 66.6263V0.794617C68.498 0.357672 68.8608 0.000171819 69.3042 0.000171819H136.186C136.633 0.000171819 137 0.361644 136.996 0.802561C136.621 32.4969 114.079 58.94 83.9334 65.7802C83.0022 65.9907 83.1594 67.3453 84.1189 67.3453H84.1148Z" fill="url(#pattern-home-hero-windmill-0)" fill-opacity="0.6" style="mix-blend-mode:multiply"></path>
+                    <defs>
+                            <pattern id="pattern-home-hero-windmill-0" patternContentUnits="objectBoundingBox" width="1.45985" height="1.48148">
+                                <use xlink:href="#svg-noise" transform="scale(0.00291971 0.00296296)"></use>
+                            </pattern>
+                        <linearGradient id="paint0_linear_1655_45397" x1="-76.6791" y1="-15.6157" x2="165.682" y2="81.0082" gradientUnits="userSpaceOnUse">
+                            <stop offset="0.427083" stop-color="#00FFF6"></stop>
+                            <stop offset="0.791667" stop-color="#FF00F2"></stop>
+                        </linearGradient>
+                    </defs>
+               </svg>
+            </div>
+            <p class="text-justify w-2/3 text-xl font-semibold relative z-[9]">"I'm a seasoned full-stack developer, proficient in a wide array of technologies essential for modern web development. From crafting sleek layouts with HTML5 and CSS3 to leveraging frameworks like Tailwind CSS and Bootstrap for rapid development, I'm adept at bringing designs to life. My expertise extends to the backend as well, with proficiency in Node.js, Express.js, and MongoDB, ensuring robust server-side functionality.</p>
+                <p class="text-justify w-2/3 text-xl font-semibold ">One aspect of my work that I take particular pride in is my knack for creating captivating animations using CSS. I believe that these animations not only enhance the visual appeal of the websites I build but also greatly improve the overall user experience. To take my animations to the next level, I often utilize powerful libraries like GSAP, ScrollTrigger, or Locomotive, allowing me to implement intricate and dynamic interactions with ease.</p>
+                <p class="text-justify w-2/3 text-xl font-semibold relative z-[9]">I'm confident in my abilities and always strive to deliver top-notch solutions to my clients. My dedication to pushing the boundaries of web development fuels my continuous learning and exploration of new techniques and technologies. With each project, I aim to not only meet but exceed expectations, leaving a lasting impression on both clients and users alike."</p>
+                <div id="spring" class="w-32 h-96 absolute top-[48%] left-[15%] -rotate-[50deg]">
+                    <img src="https://gsap.com/tf-assets/worm-e8f0c8f6.png" alt="">
+                </div>
+                <div id="string">
+                    <svg id="svgs" width="1000" height="200">
+                        <path d="M 10 100 Q 500 100 990 100" stroke="black" fill="transparent" class="font-bolder"/>
+                    </svg>
+                </div>
+        </div>
+        <!-- TODO: ShowCase -->
+        <div id="showcase" class="w-full h-screen pt-16">
+            <h1 class="text-center text-6xl">My Projects</h1>
+            <div id="card-container" class="w-full h-fit p-5 mt-24 flex gap-x-20">
+                <div id="card1" class="card w-80 h-fit rounded-md p-5 overflow-hidden">
+                    <div class="w-full h-44 rounded-lg cursor-pointer overflow-hidden bg-cover bg-center relative">
+                        <img class="img h-full w-full object-cover absolute z-10" src="4.jpg" alt=""/>
+                        <video id="video1" class="w-full h-full absolute object-cover cursor-none" src="videoAssets/bubble.mp4" loop></video>
+                    </div>
+                    <h1 class="text-center text-3xl my-2 text-white font-thin">Bubble Tapping Game</h1>
+                    <p class="text-justify text-white text-lg">I build this website for mouse interaction improvment.The main purpose for making this website is to intaract with computer. In the Above is example of my work.</p>
+                    <a href="https://sc-designs.github.io/Bubble_Game/" class="cursor-none"><div class="h-fit w-full text-xl flex justify-center font-semibold inline-block py-1 bg-white mt-2 rounded-full gap-x-2 transition-all ease-linear hover:gap-x-5 hover:font-bold overflow-hidden "><span>View Site</span> <i class="ri-arrow-right-up-line"></i></div></a>
+                </div>
+                <div id="card2" class="card w-80 h-fit rounded-md p-5 overflow-hidden">
+                    <div class="w-full h-44 rounded-lg cursor-pointer overflow-hidden bg-cover bg-center relative">
+                        <img class="img h-full w-full object-cover absolute z-10" src="3.jpg" alt=""/>
+                        <video id="video2" class="w-full h-full absolute object-cover cursor-none" src="videoAssets/obys clone.mp4" loop></video>
+                    </div>
+                    <h1 class="text-center text-3xl my-2 text-white font-thin">WebSite Clone</h1>
+                    <p class="text-justify text-white text-lg">I can make Any WebSite Clone in few days. Makesure It will be the 2d website, not the 3d website. In the Above is example of my work.</p>
+                    <a href="https://sc-designs.github.io/obysClone/" class="cursor-none"><div class="h-fit w-full text-xl flex justify-center font-semibold inline-block py-1 bg-white mt-2 rounded-full gap-x-2 transition-all ease-linear hover:gap-x-5 hover:font-bold overflow-hidden "><span>View Site</span> <i class="ri-arrow-right-up-line"></i></div></a>
+                </div>
+                <div id="card3" class="card w-80 h-fit rounded-md p-5 overflow-hidden">
+                    <div class="w-full h-44 rounded-lg cursor-pointer overflow-hidden  bg-cover bg-center relative">
+                        <img class="img h-full w-full object-cover absolute z-10" src="2.jpg" alt=""/>
+                        <video id="video3" class="w-full h-full absolute object-cover cursor-none" src="videoAssets/portfiolio.mp4" loop></video>
+                    </div>
+                    <h1 class="text-center text-3xl mt-2 text-white font-thin">PortFolio</h1>
+                    <p class="text-justify text-white text-lg">I Can Make Any kind of PortFolio you want, with defferent types of animation. In the Above is example of my work.</p>
+                    <a href="https://sc-designs.github.io/New_PortFolio_Anime/" class="cursor-none"><div class="h-fit w-full text-xl flex justify-center font-semibold inline-block py-1 bg-white mt-2 rounded-full gap-x-2 transition-all ease-linear hover:gap-x-5 hover:font-bold overflow-hidden "><span>View Site</span> <i class="ri-arrow-right-up-line"></i></div></a>
+                </div>
+                <div id="card4" class="card w-80 h-fit rounded-md p-5 overflow-hidden">
+                    <div class="w-full h-44 rounded-lg overflow-hidden cursor-pointer bg-cover bg-center relative">
+                        <img class="img h-full w-full object-cover absolute z-10" src="1.jpg" alt=""/>
+                        <video id="video4" class="w-full h-full absolute object-cover cursor-none" src="videoAssets/fullstack.mp4" loop></video>
+                    </div>
+                    <h1 class="text-center text-3xl mt-2 text-white font-thin">Opinion WebSite</h1>
+                    <p class="text-justify text-white text-lg">I can make a full flaged website, that mean if you want frontent and backend togather, I will provide you. In the Above is example of my work.</p>
+                    <a href="https://github.com/Sc-Designs/OnlinePaymentOpinion" class="cursor-none"><div class="h-fit w-full text-xl flex justify-center font-semibold inline-block py-1 bg-white mt-2 rounded-full gap-x-2 transition-all ease-linear hover:gap-x-5 hover:font-bold overflow-hidden "><span>View Site</span> <i class="ri-arrow-right-up-line"></i></div></a>
+                </div>
+            </div>
+        </div>
+        <!-- TODO: Service -->
+        <div id="service" class="w-full h-screen flex flex-col items-center justify-center">
+            <h1 class="service-text text-center text-4xl tracking-[1.5vw] font-bold mb-10">My Services</h1>
+            <div class="card-container w-full h-2/3 flex justify-around">
+                <div id="left-right" class="cards w-64 h-[35vw] mt-20 rounded-full -rotate-[30deg] flex flex-col justify-start items-center gap-y-5 py-10">
+                    <div class=" w-48 h-48 rounded-full overflow-hidden">
+                        <img class="h-full w-full object-cover object-left" src="2.jpg" alt="">
+                    </div>
+                    <p class="text-center px-5 text-xl text-white tracking-tight">If you want a profesonal portfolio with some uniqe animation, I can provide you as you want and something else you can contact me with my gmail below.</p>
+                </div>
+                <div class="cards w-64 h-[35vw] mt-10 rounded-full -rotate-[30deg] flex flex-col justify-start items-center gap-y-5 py-10">
+                    <div class=" w-48 h-48 rounded-full overflow-hidden">
+                        <img class="h-full w-full object-cover" src="1.jpg" alt="">
+                    </div>
+                    <p class="text-center px-5 text-xl text-white tracking-tight">Here, I make a ClientSide and ServerSide base website with using of MongoDB staff as data collection. If you want to create this type of websites you can contact me with my gmail below.</p>
+                </div>
+                <div id="left-right" class="cards w-64 h-[35vw] mt-20 rounded-full -rotate-[30deg] flex flex-col justify-start items-center gap-y-5 py-10">
+                    <div class=" w-48 h-48 rounded-full overflow-hidden">
+                        <img class="h-full w-full object-cover" src="3.jpg" alt="">
+                    </div>
+                    <p class="text-center px-5 text-xl text-white tracking-tight">Here, I create such pretty dop level 2d animation in website with gsap, ScrollTrigger, Swipper, sheryjs, Locomotive and some my animation also, if you want that kind of website contact me with gmail below.</p>
+                </div>
+            </div>
+            <div id="service-part2" class="w-[100vw] h-[65vh] flex flex-col gap-y-4">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><p class=" px-5 text-3xl text-center text-black font-bold tracking-tight">If you want a profesonal portfolio with some uniqe animation, I can provide you as you want and something else you can contact me with my gmail below.</p></div>
+                        <div class="swiper-slide"><p class=" px-5 text-3xl text-center text-black font-bold tracking-tight">Here, I make a ClientSide and ServerSide base website with using of MongoDB staff as data collection. If you want to create this type of websites you can contact me with my gmail below.</p></div>
+                        <div class="swiper-slide"><p class=" px-5 text-3xl text-center text-black font-bold tracking-tight">Here, I create such pretty dop level 2d animation in website with gsap, ScrollTrigger, Swipper, sheryjs, Locomotive and some my animation also, if you want that kind of website contact me with gmail below.</p></div>
+                    </div>
+                </div>
+                <div class="bg-black py-4 px-9 rounded-full">
+                    <p id="arrow-indicate" class="text-white uppercase pointer-events-none font-bold"><i class="ri-arrow-left-line inline-block text-xl"></i> Swipe for more infomation <i class="ri-arrow-left-line inline-block text-xl"></i></p>
+                </div>
+            </div>
+        </div>
+        <!-- TODO: footer -->
+        <div id="footer" class="w-full h-fit bg-black flex flex-col justify-center px-10 py-6">
+            <a class="text-white py-4 text-2xl border-b-2" href="https://github.com/Sc-Designs"><span>GitHub<i class="ri-arrow-right-up-line"></i></span></a>
+            <a class="text-white py-4 text-2xl border-b-2" href="https://www.facebook.com/soham.banarjee.35"><span>Facebook<i class="ri-arrow-right-up-line"></i></span></a>
+            <a class="text-white py-4 text-2xl border-b-2" href="https://www.linkedin.com/in/suvam-chakraborti-697770296/"><span>Linkdin<i class="ri-arrow-right-up-line"></i></span></a>
+            <a class="text-white py-4 text-2xl" href="#"><span>Gmail<i class="ri-arrow-right-up-line"></i>to nfgaming4523@gmail.com</span></a>
+            <span class="inline-block w-full h-fit py-2 text-white text-center">Copyright &copy; by Suvam Chakraborti.</span>
+        </div>
+    </div>
+</body>
+<!-- gsap -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- ScrollTrigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Three.js is needed for 3d Effects -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+<!-- ControlKit is needed for Debug Panel -->
+<script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+<!-- sheryjs is available -->
+<script  type="text/javascript"  src="https://cdn.jsdelivr.net/npm/sheryjs/dist/Shery.js"></script>
+<!-- swipperjs -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- my script -->
+<script src="script.js"></script>
+</html>
