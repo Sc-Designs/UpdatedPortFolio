@@ -27,6 +27,21 @@ html, body {
     height: 100%;
     width: 100%;
 }
+body {
+    transition: all 1s ease;
+}
+body[theme='default'] {
+    background:#e00153e7;
+}
+body[theme='default1'] {
+    background: #029c83;
+}
+body[theme='default2'] {
+    background:#156bb6;
+}
+body[theme='default3'] {
+    background:#0b8e8e;
+}
 body::-webkit-scrollbar {
     display: none;
 }
@@ -35,15 +50,13 @@ body::-webkit-scrollbar {
     background-color: #c300ff32;
     color: #000000a6;
 }
+
 #loader {
     position: fixed;
     top: 0;
     z-index: 9999999;
     background-color: #070707;
     overflow: hidden;
-}
-.container{
-    background: linear-gradient(to top right,#845EC2,#D65DB1,#FF6F91,#FF9671,#FFC75F);
 }
 .nav-text {
     font-family: navbar;

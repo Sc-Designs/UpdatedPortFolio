@@ -44,11 +44,11 @@ gsap.to("#arrow-indicate",{
 });
 gsap.from("#card-container .card",{
   x:1700,
+  y:-500,
   opacity: 0,
-  borderRadius: "100% 100%",
-  rotate:"360deg",
+  rotate:"-960deg",
   stagger:0.5,
-  duration: 2.5,
+  duration: 1.5,
   scrollTrigger: {
     trigger: "#card-container .card",
     scroller: "body",
@@ -195,11 +195,11 @@ allLink.forEach((e)=>{
     })
   })
 })
-var Path = "M 10 100 Q 500 50 990 100";
-var finalPath = "M 10 100 Q 500 100 990 100";
+var Path = "M 50 100 Q 500 100 900 100";
+var finalPath = "M 50 100 Q 500 100 900 100";
 var string = document.getElementById("string");
 string.addEventListener("mousemove", function (dets) {
-  Path = `M 10 100 Q ${dets.x} ${dets.y} 990 100`;
+  Path = `M 50 100 Q ${dets.x} ${dets.y} 900 100`;
   gsap.to("#svgs path", {
     attr: { d: Path },
   });
@@ -254,3 +254,17 @@ card4.addEventListener("mouseleave", () => {
   video4.pause();
   video4.style.zIndex = "0";
 });
+
+document.querySelectorAll(".section").forEach((e)=>{
+  ScrollTrigger.create({
+    trigger: e,
+    start: "top 50%",
+    end: "bottom 50%",
+    onEnter:function(){
+      document.body.setAttribute("theme",e.dataset.color)
+    },
+    onEnterBack:function(){
+      document.body.setAttribute("theme",e.dataset.color)
+    }
+  })
+})
